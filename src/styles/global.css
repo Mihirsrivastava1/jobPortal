@@ -1,0 +1,115 @@
+:root {
+  --color-cork: #a87c52;
+  --color-cork-dark: #7d5b3a;
+  --color-cork-darker: #5f4429;
+  --color-paper: #f7f2e7;
+  --color-paper-alt: #efe6d3;
+  --color-ink: #24211c;
+  --color-slate: #6b6355;
+  --color-pin-red: #d64545;
+  --color-pin-teal: #2f8f82;
+  --color-tape: #e8deb8;
+  --color-border: rgba(36, 33, 28, 0.14);
+
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-hand: 'Caveat', cursive;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --shadow-pin: 0 10px 20px -8px rgba(36, 33, 28, 0.35), 0 2px 6px rgba(36, 33, 28, 0.15);
+  --shadow-lift: 0 16px 30px -10px rgba(36, 33, 28, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-paper-alt);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  margin: 0;
+  line-height: 1.15;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Visible keyboard focus everywhere */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--color-pin-teal);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.cork-texture {
+  background-color: var(--color-cork);
+  background-image:
+    radial-gradient(circle at 15% 25%, rgba(255, 255, 255, 0.05) 0, transparent 40px),
+    radial-gradient(circle at 75% 60%, rgba(0, 0, 0, 0.08) 0, transparent 50px),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.04) 0, transparent 35px),
+    radial-gradient(circle at 90% 15%, rgba(0, 0, 0, 0.06) 0, transparent 45px),
+    radial-gradient(circle at 55% 40%, rgba(0, 0, 0, 0.05) 0, transparent 30px);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

@@ -1,0 +1,142 @@
+.post-job {
+  flex: 1;
+  padding: 48px 0 80px;
+}
+
+.post-job__inner {
+  max-width: 760px;
+}
+
+.post-job__header {
+  color: var(--color-paper);
+  margin-bottom: 28px;
+}
+
+.post-job__header h1 {
+  font-size: 2.2rem;
+}
+
+.post-job__header p {
+  margin-top: 8px;
+  color: var(--color-paper-alt);
+}
+
+.post-job__local-notice {
+  background: var(--color-tape);
+  color: var(--color-ink);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 18px;
+}
+
+.post-job__form {
+  background: var(--color-paper);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  box-shadow: var(--shadow-lift);
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+legend {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0 0 8px;
+  border-bottom: 1px dashed var(--color-border);
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.post-job__form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-slate);
+  flex: 1;
+}
+
+.post-job__row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.post-job__row > label {
+  min-width: 200px;
+}
+
+.post-job__form input,
+.post-job__form select,
+.post-job__form textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 10px 12px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-ink);
+  resize: vertical;
+}
+
+.post-job__hint {
+  font-weight: 400;
+  font-size: 0.78rem;
+  color: var(--color-slate);
+  opacity: 0.85;
+}
+
+.post-job__field-error {
+  color: var(--color-pin-red);
+  font-weight: 600;
+  font-size: 0.78rem;
+}
+
+.post-job__error {
+  background: rgba(214, 69, 69, 0.1);
+  color: var(--color-pin-red);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.post-job__submit {
+  align-self: flex-start;
+  background: var(--color-pin-red);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 13px 26px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.post-job__submit:hover {
+  background: #b93a3a;
+}
+
+.post-job__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .post-job__form {
+    padding: 22px;
+  }
+}

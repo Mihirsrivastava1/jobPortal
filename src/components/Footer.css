@@ -1,0 +1,13 @@
+.footer {
+  background: var(--color-cork-darker);
+  color: var(--color-paper-alt);
+  padding: 20px 0;
+  font-size: 0.85rem;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
